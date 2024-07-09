@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <style>
+        h {
+            font-size: 34px;
+        }
+        .weather{
+            text-align: center;
+        }
+        .tokyo {
+            color: #1a64d6;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .first{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 34px;
+        }
+        .second{
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 34px;
+        }
+        .templist {
+            text-align: center;
+            list-style: none;
+        }
+        .day {
+            padding: 20px 0;
+            border-radius: 10px;
+            transition: all 200ms ease-in-out;
+        }
+         .day:hover{
+            background-color: rgba(222, 222, 64, 0.135);
+
+         } 
+        .temp {
+            font-family: monospace;
+            font-weight: lighter;
+            opacity: 0.7;
+            font-size: 18px;
+        }
+        .temp2{
+            font-family: monospace;
+            font-size: 18px;
+            font-weight: bolder;
+        }
+        button {
+            padding: 16px 24px;
+            background-color: #1a64d6;
+            color: white;
+            display: block;
+            font-size: 16px;
+            margin: 20px auto;
+            border: 1px solid #1a64d6;
+            border-radius: 30px;
+        }
+        
+        button:hover{
+            color: #1a64d6;
+            transition: all 200ms ease-in-out;
+            background-color: white;
+        }
+        
+        h3{
+            font-family: monospace;
+            font: size 18px;
+            opacity: 0.7px;
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <div class="weather">
+        <h>
+            🌤️
+            <div class="tokyo">Currently 21&#176 in Tokyo</div>
+            <div class="first">13&#176 / <span class="second">23&#176</span> </div>
+        </h>
+        <h1>
+            <ul class="templist">
+                <li class="day">
+                   🌧️Tomorrow
+                   <div>
+                    <span class="temp">10&#176 / </span> 
+                    <span class="temp2">22&#176</span>
+                    </div> 
+                </li>
+                <li class="day">
+                    🌥️Saturday
+                    <div>
+                    <span class="temp">15&#176 / </span>
+                    <span class="temp2">17&#176</span>
+                    </div>
+                </li>
+                 <li class="day">
+                    ☀️Sunday
+                    <div>
+                    <span class="temp">15&#176 / </span>
+                    <span class="temp2">17&#176</span>
+                    </div>
+                </li>
+            </ul>
+        </h1>
+        <button>Change City</button>
+        <h3>Coded by Keisha Avery</h3>
+    </div>
+</body>
+</html>
