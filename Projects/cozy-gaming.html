@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Gaming</title>
+    <style>
+    .wholepage{
+        text-align: center;
+        background: #f5f0fe;
+    }
+    </style>
+</head>
+<body class="wholepage">
+    <h1>
+       🍄 Cozy Gaming Blog 🍄
+    </h1>
+    <h2>
+        My Top 3 Favorite Cozy Games to Play
+    </h2>
+    <h3>
+        <div> 🐶 Animal Crossing: New Horizon 
+              <div>
+                <img 
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/132/586/original/acnh.jpeg?1720643716"
+                alt="acnh"
+                width="150"
+            />  
+              </div> 
+        </div>
+        <div> 🧚🏽 Fae Farm 
+            <div>
+               <img 
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/132/587/original/faefarm.jpeg?1720643986"
+                alt="faefam"
+                width="150"
+            />  
+            </div>   
+        </div>
+        <div> 👩🏽‍🌾 No Place Like Home 
+            <div>
+               <img 
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/132/588/original/noplacelikehome.jpeg?1720644097"
+                alt="noplacelikehome"
+                width="150"
+            />  
+            </div>          
+        </div>
+    </h3>
+    <h4>
+        Love Cozy Gaming, Stay Informed!
+        <div class = "information">
+           If you are intrested in the lastest cozy games. Stay in touch! 
+           <br />
+           Click and submit you information to recieve weekly newsletters and be added to my Discord ☺️
+        </div>
+    </h4>
+    <button>
+        Stay Informed!
+    </button>
+<script>
+    function interested(){
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        let discord = prompt("What is your Discord?");
+        let h4 = document.querySelector("h4");
+        h4.innerHTML = "Welcome to the Community, " + Name
+    }
+    let contactButton = document.querySelector("button");
+    contactButton.addEventListener("click", interested);
+</script>
+</body>
+</html>
