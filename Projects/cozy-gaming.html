@@ -7,8 +7,81 @@
     <style>
     .wholepage{
         text-align: center;
-        background: #f5f0fe;
+        background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);;
+
     }
+    h1 {
+        color: #698474;
+        font-size: 50px;
+        font-family: monospace;
+        width: 100%;
+        padding: 10px;
+        border: 2px #fcf8f3;
+        box-shadow: #fcf8f3;
+    }
+    h2 {
+        color:#698474;
+        font-family: monospace;
+        font-weight: lighter;
+        font-size: x-large;
+    }
+    .games{
+        font-size: medium;
+        color:burlywood;
+        background: #698474;
+        margin-left: 35%;
+        margin-right: 35%;
+        border-radius: 15px;
+    }
+    .footer{
+        color: #698474;
+        font-size: medium;
+        font-family: monospace;
+
+    }
+    .button{
+        padding: 10px 20px;
+        color: #698474;
+        display: block;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 40px;
+        margin: 30px auto;
+        border: 1px solid #698474;
+        background: transparent;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+    }
+    button:hover{
+        color: white;
+        background-color: #698474;
+    }
+    .socials{
+        display: inline-flex;
+        justify-content: center;
+        list-style-type: none;
+        padding-inline-start: 0%;
+    }
+    li{
+        margin-right: 30px;
+        font-size: large;
+        font-family: monospace;
+        color: #698474;
+        text-decoration: none;
+        
+    }
+    .credit{
+        color: #698474;
+        font-family: monospace;
+        
+    }
+    .acnhtext{
+        font-size: x;
+        font-family: monospace;
+        
+    }
+
     </style>
 </head>
 <body class="wholepage">
@@ -16,58 +89,90 @@
        🍄 Cozy Gaming Blog 🍄
     </h1>
     <h2>
-        My Top 3 Favorite Cozy Games to Play
+        My Top 3 Favorite Cozy Games of 2024!
     </h2>
-    <h3>
-        <div> 🐶 Animal Crossing: New Horizon 
-              <div>
+     <hr />
+     <br />
+    <h3 class = "games">
+        <p class="acnh"> 
+            <br /> 
+            <div>
+                <div><a href="https://animalcrossing.nintendo.com/new-horizons/" target="_blank">🐶 Animal Crossing: New Horizon</a> </div>
                 <img 
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/132/586/original/acnh.jpeg?1720643716"
                 alt="acnh"
                 width="150"
             />  
-              </div> 
-        </div>
-        <div> 🧚🏽 Fae Farm 
+              </div>
+              <p></p>
             <div>
+                <div><a href="https://faefarm.com/en-us/" target="_blank">🧚🏽 Fae Farm </a></div>
                <img 
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/132/587/original/faefarm.jpeg?1720643986"
                 alt="faefam"
                 width="150"
             />  
             </div>   
-        </div>
-        <div> 👩🏽‍🌾 No Place Like Home 
+        </p>
+        <p class="nplh">  
             <div>
+                <div><a href="https://steamcommunity.com/app/1472660" target="_blank">👩🏽‍🌾 No Place Like Home</a></div>
                <img 
                 src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/132/588/original/noplacelikehome.jpeg?1720644097"
                 alt="noplacelikehome"
                 width="150"
             />  
             </div>          
-        </div>
+        </p>
+        <br/>
     </h3>
-    <h4>
-        Love Cozy Gaming, Stay Informed!
+    <br/>
+    <h4 class = "footer">
         <div class = "information">
-           If you are intrested in the lastest cozy games. Stay in touch! 
+           Are intrested in the lastest cozy games, ways to relax?
            <br />
-           Click and submit you information to recieve weekly newsletters and be added to my Discord ☺️
+           Click <span>Stay Informed</span> Submit you information to recieve weekly newsletters!
         </div>
     </h4>
-    <button>
+    <button class="button">
         Stay Informed!
     </button>
+    <div>
+        <ul class="socials">
+            <li class="github">
+                <a href="https://github.com/averykei94" target="_blank">GitHub
+                </a>
+            </li class="discord">
+            <li>
+                <a href="https://discord.com/users/keisha_24311" target="_blank">Discord
+                </a>
+            </li class="twitch">
+            <li>
+                <a href="https://twitch.tv/wolfin_indigo" target="_blank">Twitch
+                </a>
+            </li>
+        </ul>
+    </div>
+    <br />
+    <div class="credit">
+        <strong>Coded by Keisha Avery</strong>
+        <br />
+        <em>Cozy Gaming Co.</em>
+</div>
 <script>
-    function interested(){
-        let name = prompt("What is your name?");
-        let email = prompt("What is your email?");
-        let discord = prompt("What is your Discord?");
-        let h4 = document.querySelector("h4");
-        h4.innerHTML = "Welcome to the Community, " + Name
+    function interestInfo(){
+        let stayInformed = prompt(" Would you like to stay informed?");
+        if (stayInformed === "yes"){
+            let name = prompt("What is your name?");
+            let email = prompt("What is your email?");
+            let h4 = document.querySelector("h4");
+            h4.innerHTML = "Welcome to the community, " + name + "!"
+    } else {
+        alert("No Worries! Enjoy the Content!");
     }
+}
     let contactButton = document.querySelector("button");
-    contactButton.addEventListener("click", interested);
+    contactButton.addEventListener("click", interestInfo);
 </script>
 </body>
 </html>
