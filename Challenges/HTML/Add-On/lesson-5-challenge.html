@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Themed</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        button{
+            margin: 20px;
+            font-size: larger;
+            color: azure;
+            background-color: black;
+        }
+        button:focus{
+            background-color: azure;
+            color: black;
+        }
+        .black{
+            background-color: black;
+        }
+    </style>
+</head>
+<body class="body">
+    <button>Dark Theme</button>
+</body>
+<script>
+   function darkMode(){
+    let body = document.querySelector(".body");
+    body.classList.add("black");
+   }
+   let button = document.querySelector("button");
+    button.addEventListener("click", darkMode);
+</script>
+</html>

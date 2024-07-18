@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamer Girl</title>
+    <style>
+        body{
+            background: rosybrown;
+            text-align: center;
+        }
+        .container{
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: antiquewhite;
+            padding: 40px;
+            border-radius: 20px;
+        }
+        h1{
+            text-align: center;
+            font-family: monospace;
+            color: rosybrown;
+        }
+        h2{
+            text-align: center;
+            font-family: monospace;
+            color: rosybrown;
+            font-size: 15px;
+        }
+        img{
+            border-radius: 30px;
+        
+        }
+        footer{
+            font-family: monospace;
+        }
+        p{
+            font-family: monospace;
+            font-size: 12px;
+            line-height: 2;
+            color: rosybrown;
+        }
+        .dark-theme{
+            color: rosybrown;
+            background-color: antiquewhite;
+            border-color: antiquewhite;
+            font-family: monospace;
+            font-size: 10px;
+        }
+        .offical-site{
+            color: antiquewhite;
+            background-color: rosybrown;
+            border-color: rosybrown;
+            font-family: monospace;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+        .acnh-front-cover{
+            transition: transform 150ms ease-in-out, filter 200ms ease-in;
+        }
+        .acnh-front-cover:hover{
+            filter: contrast(80%);
+            transform: scale(1.2);
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 15px;
+            margin: 20px 0;
+        }
+        .grid img{
+            width: 100%;
+            width: 300px;
+            height: 200px;
+        }
+        .dark{
+          background-color: black;
+          color: white;
+        }
+        .dark .container{
+            background-color: grey;
+        }
+        .dark a {
+            color: white;
+        }
+        .dark h1{
+            color: white;
+        }
+        .dark h2{
+            color: white;
+        }
+        .dark .dark-theme{
+            color: white;
+            background-color: black;   
+            border-color: white;       
+        }
+        .dark p{
+            color: white;
+        }
+        .dark .offical-site{
+            color: white;
+            background-color: black;
+            border-color: white;             
+        }
+    </style>
+</head>
+<body>
+    <button class="dark-theme">Dark Theme</button>
+    <div class="container">
+    <h1>Animal Crossing New Horizon</h1>
+    <h2>My Favorite Cozy Game to Play</h2>
+    <a href="https://animalcrossing.nintendo.com/new-horizons/explore/" target="_blank">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/132/586/original/acnh.jpeg?1720643716" alt="acnhcover" class="acnh-front-cover">
+    </a>
+    <br>
+    <br>
+    <div class="grid">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/951/original/branden-skeli-h6Aqb3Ee0tg-unsplash_%281%29.jpg?1721254116" alt="acnhfall">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/134/004/original/Happy-Villagers-in-Animal-Crossing-600x454.jpg?1721278497" alt="tomtim"> 
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/955/original/hhp.jpg?1721255126" alt="isabelle">
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/134/005/original/3631155-animal-crossing-merch-promo-thumb.jpg?1721278762"  alt="merch">
+    </div>
+    <br>
+    <p>
+        "Escape to a desert island and create your own paradise as you explore, create, and customize in Animal Crossing: New Horizo game."
+    <br>
+    🐶
+    <a href="https://animalcrossing.nintendo.com/new-horizons/explore/">Check Out The Official ACNH</a>
+    🐶
+    </p>
+    <button class="offical-site"> View Game Play </button>
+    </div>
+    <footer>Coded by Keisha Avery | Indigo 🍄 | CSS | HTML | JavaScript</footer>
+</body>
+<script>
+    function changeTheme(){
+        let body = document.querySelector("body");
+        
+        if(body.classList.contains("dark")){
+            body.classList.remove("dark");
+        } else {
+            body.classList.add("dark");
+        }
+    }
+    let themeButton = document.querySelector(".dark-theme");
+    themeButton.addEventListener("click", changeTheme);
+
+    function leavePage(){
+        let leave = prompt("Are you interested in being added to my discord. I live stream daily 😄");
+        if(leave === "yes"){
+            let gamerTag = prompt("What is your Discord tag?")
+            alert("Yay! You Discord tag has been recorded. You should receive an inventation within an hour.");
+        } else{
+            alert("No Worries! Maybe another time! ☺️");
+        }
+    }
+    let siteButton = document.querySelector(".offical-site");
+    siteButton.addEventListener("click", leavePage);
+</script>
+</html>
